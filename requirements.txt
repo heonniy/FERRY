@@ -1,0 +1,12 @@
+# Tested with Python 3.12, CUDA 12.8 (driver >= 570), 4x NVIDIA H100 80GB.
+# Install a CUDA build of PyTorch first, e.g.
+#   pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0
+transformers==4.57.6
+accelerate==1.14.0
+safetensors==0.8.0
+numpy==2.5.2
+numba==0.68.0
+pyarrow==25.0.0        # LMSYS-Chat-1M parquet shards
+ninja                  # builds the CUDA expert kernel (JIT, first run)
+huggingface_hub>=0.34,<1.0   # provides huggingface-cli for model / dataset download

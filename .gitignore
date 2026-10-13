@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+results/
+workloads/
+topology/
+*.nbi
+*.nbc
